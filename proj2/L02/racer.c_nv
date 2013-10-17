@@ -1,0 +1,15 @@
+#include "racer.h"
+
+#ifdef CONFIG_VOLATILE 
+volatile
+#endif
+int ring = 0;
+
+void  * racer(void *tid)
+{
+  int count;
+  for(count = nLoops; count > 0; count--)
+    {
+      ring = ring + 1;
+    }
+}

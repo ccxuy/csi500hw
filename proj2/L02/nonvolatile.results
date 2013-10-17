@@ -1,0 +1,118 @@
+Script started on Thu 17 Oct 2013 01:25:54 AM EDT
+7]2;ccxuy@mothra.cs.albany.edu:~/proj2/L02]1;mothra.cs.albany.edu8ccxuy@mothra:~/proj2/L02> make
+make: `raceDriver' is up to date.
+7]2;ccxuy@mothra.cs.albany.edu:~/proj2/L02]1;mothra.cs.albany.edu8ccxuy@mothra:~/proj2/L02> time ./raceDriver 1
+ring=20000000 ideal=20000000 diff=0 reldiff=0.000000e+00
+
+real	0m0.064s
+user	0m0.061s
+sys	0m0.001s
+7]2;ccxuy@mothra.cs.albany.edu:~/proj2/L02]1;mothra.cs.albany.edu8ccxuy@mothra:~/proj2/L02> time ./raceDriver 1
+ring=20000000 ideal=20000000 diff=0 reldiff=0.000000e+00
+
+real	0m0.061s
+user	0m0.058s
+sys	0m0.003s
+7]2;ccxuy@mothra.cs.albany.edu:~/proj2/L02]1;mothra.cs.albany.edu8ccxuy@mothra:~/proj2/L02> time ./raceDriver 1
+ring=20000000 ideal=20000000 diff=0 reldiff=0.000000e+00
+
+real	0m0.061s
+user	0m0.058s
+sys	0m0.002s
+7]2;ccxuy@mothra.cs.albany.edu:~/proj2/L02]1;mothra.cs.albany.edu8ccxuy@mothra:~/proj2/L02> time ./raceDriver 2
+ring=23498448 ideal=40000000 diff=-16501552 reldiff=-4.125388e-01
+
+real	0m0.351s
+user	0m0.695s
+sys	0m0.001s
+7]2;ccxuy@mothra.cs.albany.edu:~/proj2/L02]1;mothra.cs.albany.edu8ccxuy@mothra:~/proj2/L02> time ./raceDriver 2
+ring=23480317 ideal=40000000 diff=-16519683 reldiff=-4.129921e-01
+
+real	0m0.351s
+user	0m0.696s
+sys	0m0.001s
+7]2;ccxuy@mothra.cs.albany.edu:~/proj2/L02]1;mothra.cs.albany.edu8ccxuy@mothra:~/proj2/L02> time ./raceDriver 2
+ring=23479253 ideal=40000000 diff=-16520747 reldiff=-4.130187e-01
+
+real	0m0.351s
+user	0m0.695s
+sys	0m0.002s
+7]2;ccxuy@mothra.cs.albany.edu:~/proj2/L02]1;mothra.cs.albany.edu8ccxuy@mothra:~/proj2/L02> time ./raceDriver 10
+ring=32477004 ideal=200000000 diff=-167522996 reldiff=-8.376150e-01
+
+real	0m2.038s
+user	0m7.861s
+sys	0m0.003s
+7]2;ccxuy@mothra.cs.albany.edu:~/proj2/L02]1;mothra.cs.albany.edu8ccxuy@mothra:~/proj2/L02> time ./raceDriver 10
+ring=35666283 ideal=200000000 diff=-164333717 reldiff=-8.216686e-01
+
+real	0m1.984s
+user	0m7.835s
+sys	0m0.001s
+7]2;ccxuy@mothra.cs.albany.edu:~/proj2/L02]1;mothra.cs.albany.edu8ccxuy@mothra:~/proj2/L02> time ./raceDriver 10
+ring=33122845 ideal=200000000 diff=-166877155 reldiff=-8.343858e-01
+
+real	0m2.068s
+user	0m7.886s
+sys	0m0.002s
+7]2;ccxuy@mothra.cs.albany.edu:~/proj2/L02]1;mothra.cs.albany.edu8ccxuy@mothra:~/proj2/L02> make OPT=-O3
+gcc -c -S -O3 racer.c -o racer-O3.s
+gcc -O3 -c racer-O3.s
+gcc -o raceDriver-O3 -lpthread raceDriver.c racer-O3.o
+7]2;ccxuy@mothra.cs.albany.edu:~/proj2/L02]1;mothra.cs.albany.edu8ccxuy@mothra:~/proj2/L02> time ./raceDriver-O3 1
+ring=20000000 ideal=20000000 diff=0 reldiff=0.000000e+00
+
+real	0m0.003s
+user	0m0.000s
+sys	0m0.001s
+7]2;ccxuy@mothra.cs.albany.edu:~/proj2/L02]1;mothra.cs.albany.edu8ccxuy@mothra:~/proj2/L02> time ./raceDriver-O3 1
+ring=20000000 ideal=20000000 diff=0 reldiff=0.000000e+00
+
+real	0m0.003s
+user	0m0.001s
+sys	0m0.001s
+7]2;ccxuy@mothra.cs.albany.edu:~/proj2/L02]1;mothra.cs.albany.edu8ccxuy@mothra:~/proj2/L02> time ./raceDriver-O3 1
+ring=20000000 ideal=20000000 diff=0 reldiff=0.000000e+00
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.001s
+7]2;ccxuy@mothra.cs.albany.edu:~/proj2/L02]1;mothra.cs.albany.edu8ccxuy@mothra:~/proj2/L02> time ./raceDriver-O3 2
+ring=40000000 ideal=40000000 diff=0 reldiff=0.000000e+00
+
+real	0m0.002s
+user	0m0.001s
+sys	0m0.001s
+7]2;ccxuy@mothra.cs.albany.edu:~/proj2/L02]1;mothra.cs.albany.edu8ccxuy@mothra:~/proj2/L02> time ./raceDriver-O3 2
+ring=40000000 ideal=40000000 diff=0 reldiff=0.000000e+00
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.001s
+7]2;ccxuy@mothra.cs.albany.edu:~/proj2/L02]1;mothra.cs.albany.edu8ccxuy@mothra:~/proj2/L02> time ./raceDriver-O3 2
+ring=40000000 ideal=40000000 diff=0 reldiff=0.000000e+00
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.002s
+7]2;ccxuy@mothra.cs.albany.edu:~/proj2/L02]1;mothra.cs.albany.edu8ccxuy@mothra:~/proj2/L02> time ./raceDriver-O3 10
+ring=200000000 ideal=200000000 diff=0 reldiff=0.000000e+00
+
+real	0m0.003s
+user	0m0.001s
+sys	0m0.001s
+7]2;ccxuy@mothra.cs.albany.edu:~/proj2/L02]1;mothra.cs.albany.edu8ccxuy@mothra:~/proj2/L02> time ./raceDriver-O3 10
+ring=200000000 ideal=200000000 diff=0 reldiff=0.000000e+00
+
+real	0m0.003s
+user	0m0.001s
+sys	0m0.002s
+7]2;ccxuy@mothra.cs.albany.edu:~/proj2/L02]1;mothra.cs.albany.edu8ccxuy@mothra:~/proj2/L02> time ./raceDriver-O3 10
+ring=200000000 ideal=200000000 diff=0 reldiff=0.000000e+00
+
+real	0m0.003s
+user	0m0.000s
+sys	0m0.003s
+7]2;ccxuy@mothra.cs.albany.edu:~/proj2/L02]1;mothra.cs.albany.edu8ccxuy@mothra:~/proj2/L02> exit
+
+Script done on Thu 17 Oct 2013 01:27:24 AM EDT
