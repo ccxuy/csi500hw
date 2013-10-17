@@ -4,4 +4,4 @@
   race errors might not appear when optimized
   compilation is used for the racing() function.*/
 
-#define CONFIG_VOLATILE yes
+//#define CONFIG_VOLATILE yes

@@ -10,15 +10,7 @@ racer:
 	.cfi_def_cfa_offset 32
 	movl	$mutex, (%esp)
 	call	pthread_mutex_lock
-	movl	$20000000, %eax
-	.p2align 4,,7
-	.p2align 3
-.L2:
-	movl	ring, %edx
-	addl	$1, %edx
-	subl	$1, %eax
-	movl	%edx, ring
-	jne	.L2
+	addl	$20000000, ring
 	movl	$mutex, 32(%esp)
 	addl	$28, %esp
 	.cfi_def_cfa_offset 4

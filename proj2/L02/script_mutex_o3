@@ -1,0 +1,58 @@
+Script started on Thu 17 Oct 2013 03:59:34 PM EDT
+7]2;ccxuy@mothra.cs.albany.edu:~/things/proj2/L02]1;mothra.cs.albany.edu8ccxuy@mothra:~/things/proj2/L02> time ./raceDriver-O3 1
+ring=20000000 ideal=20000000 diff=0 reldiff=0.000000e+00
+
+real	0m0.003s
+user	0m0.000s
+sys	0m0.001s
+7]2;ccxuy@mothra.cs.albany.edu:~/things/proj2/L02]1;mothra.cs.albany.edu8ccxuy@mothra:~/things/proj2/L02> time ./raceDriver-O3 1
+ring=20000000 ideal=20000000 diff=0 reldiff=0.000000e+00
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.001s
+7]2;ccxuy@mothra.cs.albany.edu:~/things/proj2/L02]1;mothra.cs.albany.edu8ccxuy@mothra:~/things/proj2/L02> time ./raceDriver-O3 1
+ring=20000000 ideal=20000000 diff=0 reldiff=0.000000e+00
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.001s
+7]2;ccxuy@mothra.cs.albany.edu:~/things/proj2/L02]1;mothra.cs.albany.edu8ccxuy@mothra:~/things/proj2/L02> time ./raceDriver-O3 2
+ring=40000000 ideal=40000000 diff=0 reldiff=0.000000e+00
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.001s
+7]2;ccxuy@mothra.cs.albany.edu:~/things/proj2/L02]1;mothra.cs.albany.edu8ccxuy@mothra:~/things/proj2/L02> time ./raceDriver-O3 2
+ring=40000000 ideal=40000000 diff=0 reldiff=0.000000e+00
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.002s
+7]2;ccxuy@mothra.cs.albany.edu:~/things/proj2/L02]1;mothra.cs.albany.edu8ccxuy@mothra:~/things/proj2/L02> time ./raceDriver-O3 2
+ring=40000000 ideal=40000000 diff=0 reldiff=0.000000e+00
+
+real	0m0.002s
+user	0m0.001s
+sys	0m0.001s
+7]2;ccxuy@mothra.cs.albany.edu:~/things/proj2/L02]1;mothra.cs.albany.edu8ccxuy@mothra:~/things/proj2/L02> time ./raceDriver-O3 10
+ring=200000000 ideal=200000000 diff=0 reldiff=0.000000e+00
+
+real	0m0.003s
+user	0m0.003s
+sys	0m0.000s
+7]2;ccxuy@mothra.cs.albany.edu:~/things/proj2/L02]1;mothra.cs.albany.edu8ccxuy@mothra:~/things/proj2/L02> time ./raceDriver-O3 10
+ring=200000000 ideal=200000000 diff=0 reldiff=0.000000e+00
+
+real	0m0.003s
+user	0m0.001s
+sys	0m0.002s
+7]2;ccxuy@mothra.cs.albany.edu:~/things/proj2/L02]1;mothra.cs.albany.edu8ccxuy@mothra:~/things/proj2/L02> time ./raceDriver-O3 10
+ring=200000000 ideal=200000000 diff=0 reldiff=0.000000e+00
+
+real	0m0.003s
+user	0m0.000s
+sys	0m0.002s
+7]2;ccxuy@mothra.cs.albany.edu:~/things/proj2/L02]1;mothra.cs.albany.edu8ccxuy@mothra:~/things/proj2/L02> exit
+
+Script done on Thu 17 Oct 2013 03:59:56 PM EDT
