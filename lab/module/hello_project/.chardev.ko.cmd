@@ -1,0 +1,1 @@
+cmd_/home/master/user/module/hello_project/chardev.ko := ld -r -m elf_i386 -T /home/master/kernel/linux-3.10.12/scripts/module-common.lds --build-id  -o /home/master/user/module/hello_project/chardev.ko /home/master/user/module/hello_project/chardev.o /home/master/user/module/hello_project/chardev.mod.o

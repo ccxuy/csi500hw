@@ -1,0 +1,25 @@
+My syscall's parameters: 0x804a04c 0x804a03c
+My system call returned 0.
+Current values:  majpfaults=0 minpfaults=178
+4   4Try to do 10 times.Current values:  majpfaults=0 minpfaults=203
+current time > 1381450348
+=======START dosomething=========Current values:  majpfaults=0 minpfaults=97860
+current time > 1381450351
+=======START dosomething=========Current values:  majpfaults=0 minpfaults=97860
+current time > 1381450352
+=======START dosomething=========Current values:  majpfaults=0 minpfaults=97860
+current time > 1381450352
+=======START dosomething=========Current values:  majpfaults=0 minpfaults=97860
+current time > 1381450352
+=======START dosomething=========Current values:  majpfaults=0 minpfaults=97860
+current time > 1381450353
+=======START dosomething=========Current values:  majpfaults=0 minpfaults=97860
+current time > 1381450353
+=======START dosomething=========Current values:  majpfaults=0 minpfaults=97860
+current time > 1381450354
+=======START dosomething=========Current values:  majpfaults=0 minpfaults=97860
+current time > 1381450354
+=======START dosomething=========Current values:  majpfaults=0 minpfaults=97860
+current time > 1381450354
+=======START dosomething=========Current values:  majpfaults=0 minpfaults=97860
+current time > 1381450355
