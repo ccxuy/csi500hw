@@ -31,7 +31,9 @@ static int Device_Open = 0;	/* Is device open?
 				 * Used to prevent multiple access to device */
 static unsigned char msg[BUF_LEN];	/* The msg the device will give when asked */
 static char *msg_Ptr;
+static unsigned long *long_Ptr;
 static unsigned long pagefault[2];
+static int lcount = 8;
 
 static struct file_operations fops = {
 	.read = device_read,
@@ -89,7 +91,7 @@ static int device_open(struct inode *inode, struct file *file)
 		return -EBUSY;
 
 	Device_Open++;
-	sprintf(msg, "I already told you %d times Hello world!\n", counter++);
+	//sprintf(msg, "I already told you %d times Hello world!\n", counter++);
 
 	/*
 	 * Load data...
@@ -98,8 +100,10 @@ static int device_open(struct inode *inode, struct file *file)
 	pagefault[1] = current->min_flt;
 	//printk(KERN_EMERG "<0>I was assigned major number %lu.\n", pagefault[0]);
 	//printk(KERN_EMERG "<0>I was assigned minor number %lu.\n", pagefault[1]);
+	sprintf(msg, "%lu %lu\n", pagefault[0], pagefault[1]);
+	
 	int i = 0;
-	for(i=0; i<2; i++){
+	for(i=0; i<0; i++){
 		unsigned char bytes[4];
 		msg[i*4+0] = (pagefault[i] >> 24) & 0xFF;
 		msg[i*4+1] = (pagefault[i] >> 16) & 0xFF;
@@ -112,10 +116,13 @@ static int device_open(struct inode *inode, struct file *file)
 
 	printk(KERN_EMERG "<0>%lu %x %x %x %x .\n",pagefault[i], bytes[0], bytes[1], bytes[2], bytes[3]);
 	}
+	//printk(KERN_EMERG "maj=%d, min=%d\n",pagefault[0], pagefault[1]);
 	//msg[16]='\0';
 	//printk(KERN_EMERG "<0>Print %d\n", (pagefault[1] >>  8) & 0xFF);
 	//printk(KERN_EMERG "<0>Print %d\n", (pagefault[1] ) & 0xFF);
 
+	long_Ptr = pagefault;
+	lcount = 8;
 	msg_Ptr = msg;
 	try_module_get(THIS_MODULE);
 
@@ -152,18 +159,18 @@ static ssize_t device_read(struct file *filp,	/* see include/linux/fs.h   */
 	 */
 	int bytes_read = 0;
 
-
 	/*
 	 * If we're at the end of the message, 
 	 * return 0 signifying end of file 
 	 */
-	if (*msg_Ptr == 0)
+	if (lcount == 0)
 		return 0;
 
 	/* 
 	 * Actually put the data into the buffer 
 	 */
-	while (length && *msg_Ptr) {
+	
+	//while (length && *long_Ptr) {
 
 		/* 
 		 * The buffer is in the user data segment, not the kernel 
@@ -171,10 +178,24 @@ static ssize_t device_read(struct file *filp,	/* see include/linux/fs.h   */
 		 * put_user which copies data from the kernel data segment to
 		 * the user data segment. 
 		 */
-		put_user(*(msg_Ptr++), buffer++);
+	/*	put_user(*(long_Ptr), (unsigned long *)buffer);
+		long_Ptr+=4;
+		buffer+=4;
+		length-=4;
+		bytes_read+=4;
+		lcount-=4;
+	}*/
 
-		length--;
-		bytes_read++;
+	if(length>=8) {
+	put_user(current->maj_flt, (unsigned long *)buffer);
+	buffer+=4;
+	length-=4;
+	bytes_read+=4;
+	put_user(current->min_flt, (unsigned long *)buffer);
+	buffer+=4;
+	length-=4;
+	bytes_read+=4;
+	lcount-=8;
 	}
 
 	/* 

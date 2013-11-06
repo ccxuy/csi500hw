@@ -6,25 +6,19 @@
 
 int main(){
 	int nread;
-	char buffer[80];
+	unsigned long pf_buf[2];
 	int filedesc = open("df",O_RDONLY);
-	if(filedesc <0)
+	if(filedesc <0){
+		//perr();
 		return 1;
+	}
 	
-	nread=read(filedesc, buffer, 80);
+	nread=read(filedesc, pf_buf, 8);
 
 	if(nread == -1)
 		printf("read error!");
 
-	unsigned long maj, min=0;
-	int i;
-	for(i=0; i<4; i++){
-		maj |= ( (unsigned long)buffer[i] << (i*8) );
-	}
-	for(i=4; i<8; i++){
-		min |= ( (unsigned long)buffer[i] << (i*8) );
-	}
 	
-	printf("maj=%lu, min=%lu \n", maj, min);
+	printf("maj=%lu, min=%lu \n", pf_buf[0], pf_buf[1]);
 	close(filedesc);
 }
