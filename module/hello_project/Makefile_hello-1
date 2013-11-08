@@ -1,0 +1,8 @@
+obj-m += hello-1.o
+BUILD = /lib/modules/3.10.12csi500/build
+
+all:
+	make -C $(BUILD) M=$(PWD) modules
+clean:
+	make -C $(BUILD) M=$(PWD) clean
+    
