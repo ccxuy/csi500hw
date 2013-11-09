@@ -53,6 +53,8 @@ int main(int argc, char *argv[])
     old_min=pf_buf[1];
     
     ptr = (int*)malloc(arraysize * sizeof(*ptr));
+    if(ptr==0){perror("malloc failed"); exit(1);}
+
     for(i=0; i<arraysize; i++)
     {
 	ptr[i] = i;
