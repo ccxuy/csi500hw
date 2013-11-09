@@ -1,0 +1,26 @@
+Script started on Fri Nov  8 23:52:18 2013
+[01;32mmaster@localhost[01;34m ~/things/module/hello_project $[00m logouts[Ksudo shutdown -h nowvim /boot/grub/grub.conf shutdown -h now[Kls[Kogout[Klogouts[Ksudo shutdown -h nowvim /boot/grub/grub.conf shutdown -h now[Kls[Kogout[Klogouts[Ksudo shutdown -h nowvim /boot/grub/grub.conf clear[Ksudo vim /etc/inittab           viiiiiim//etttcn [A[01;32mmaster@localhost[01;34m ~/things/module/hello_project $[00m sudo shutdown -h now[K
+[K[A[01;32mmaster@localhost[01;34m ~/things/module/hello_project $[00m sudo shutdown -h now          viiiiiim//etttcn [A[01;32mmaster@localhost[01;34m ~/things/module/hello_project $[00m sudo vim /etc/inittab [K
+[K[A[01;32mmaster@localhost[01;34m ~/things/module/hello_project $[00m sudo vim /etc/inittab clear[Ksudo vim /boot/grub/grub.conf shutdown -h now[Kls[Kogout[K/user  r/bin/time cat df | od -t u4 [A
+0.00user 0.00system 0:00.00elapsed 66%CPU (0avgtext+0avgdata 1904maxresident)k
+0inputs+0outputs (0major+157minor)pagefaults 0swaps
+0000000          0        147
+0000010
+[01;32mmaster@localhost[01;34m ~/things/module/hello_project $[00m [K/usr/bin/time cat df | od -t u4 [A
+0.00user 0.00system 0:00.01elapsed 54%CPU (0avgtext+0avgdata 1888maxresident)k
+0inputs+0outputs (0major+156minor)pagefaults 0swaps
+0000000          0        146
+0000010
+[01;32mmaster@localhost[01;34m ~/things/module/hello_project $[00m [K/usr/bin/time cat df | od -t u4 [A
+0.00user 0.00system 0:00.01elapsed 50%CPU (0avgtext+0avgdata 1888maxresident)k
+0inputs+0outputs (0major+156minor)pagefaults 0swaps
+0000000          0        146
+0000010
+[01;32mmaster@localhost[01;34m ~/things/module/hello_project $[00m [K/usr/bin/time cat df | od -t u4 [A
+0.00user 0.00system 0:00.01elapsed 60%CPU (0avgtext+0avgdata 1888maxresident)k
+0inputs+0outputs (0major+156minor)pagefaults 0swaps
+0000000          0        146
+0000010
+[01;32mmaster@localhost[01;34m ~/things/module/hello_project $[00m [Kexit
+
+Script done on Fri Nov  8 23:53:10 2013

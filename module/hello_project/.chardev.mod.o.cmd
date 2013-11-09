@@ -1,8 +1,8 @@
-cmd_/home/master/user/module/hello_project/chardev.mod.o := gcc -Wp,-MD,/home/master/user/module/hello_project/.chardev.mod.o.d  -nostdinc -isystem /usr/lib/gcc/i686-pc-linux-gnu/4.6.3/include -I/home/master/kernel/linux-3.10.12/arch/x86/include -Iarch/x86/include/generated  -Iinclude -I/home/master/kernel/linux-3.10.12/arch/x86/include/uapi -Iarch/x86/include/generated/uapi -I/home/master/kernel/linux-3.10.12/include/uapi -Iinclude/generated/uapi -include /home/master/kernel/linux-3.10.12/include/linux/kconfig.h -D__KERNEL__ -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -O2 -m32 -msoft-float -mregparm=3 -freg-struct-return -fno-pic -mpreferred-stack-boundary=2 -march=i686 -mtune=generic -Wa,-mtune=generic32 -ffreestanding -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -DCONFIG_AS_CFI_SECTIONS=1 -DCONFIG_AS_AVX=1 -DCONFIG_AS_AVX2=1 -pipe -Wno-sign-compare -fno-asynchronous-unwind-tables -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -Wframe-larger-than=2048 -fno-stack-protector -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -g -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -DCC_HAVE_ASM_GOTO  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(chardev.mod)"  -D"KBUILD_MODNAME=KBUILD_STR(chardev)" -DMODULE  -c -o /home/master/user/module/hello_project/chardev.mod.o /home/master/user/module/hello_project/chardev.mod.c
+cmd_/home/master/things/module/hello_project/chardev.mod.o := gcc -Wp,-MD,/home/master/things/module/hello_project/.chardev.mod.o.d  -nostdinc -isystem /usr/lib/gcc/i686-pc-linux-gnu/4.6.3/include -I/home/master/kernel/linux-3.10.12/arch/x86/include -Iarch/x86/include/generated  -Iinclude -I/home/master/kernel/linux-3.10.12/arch/x86/include/uapi -Iarch/x86/include/generated/uapi -I/home/master/kernel/linux-3.10.12/include/uapi -Iinclude/generated/uapi -include /home/master/kernel/linux-3.10.12/include/linux/kconfig.h -D__KERNEL__ -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -O2 -m32 -msoft-float -mregparm=3 -freg-struct-return -fno-pic -mpreferred-stack-boundary=2 -march=i686 -mtune=generic -Wa,-mtune=generic32 -ffreestanding -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -DCONFIG_AS_CFI_SECTIONS=1 -DCONFIG_AS_AVX=1 -DCONFIG_AS_AVX2=1 -pipe -Wno-sign-compare -fno-asynchronous-unwind-tables -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -Wframe-larger-than=2048 -fno-stack-protector -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -g -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -DCC_HAVE_ASM_GOTO  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(chardev.mod)"  -D"KBUILD_MODNAME=KBUILD_STR(chardev)" -DMODULE  -c -o /home/master/things/module/hello_project/chardev.mod.o /home/master/things/module/hello_project/chardev.mod.c
 
-source_/home/master/user/module/hello_project/chardev.mod.o := /home/master/user/module/hello_project/chardev.mod.c
+source_/home/master/things/module/hello_project/chardev.mod.o := /home/master/things/module/hello_project/chardev.mod.c
 
-deps_/home/master/user/module/hello_project/chardev.mod.o := \
+deps_/home/master/things/module/hello_project/chardev.mod.o := \
     $(wildcard include/config/module/unload.h) \
   include/linux/module.h \
     $(wildcard include/config/sysfs.h) \
@@ -533,6 +533,6 @@ deps_/home/master/user/module/hello_project/chardev.mod.o := \
   include/linux/vermagic.h \
   include/generated/utsrelease.h \
 
-/home/master/user/module/hello_project/chardev.mod.o: $(deps_/home/master/user/module/hello_project/chardev.mod.o)
+/home/master/things/module/hello_project/chardev.mod.o: $(deps_/home/master/things/module/hello_project/chardev.mod.o)
 
-$(deps_/home/master/user/module/hello_project/chardev.mod.o):
+$(deps_/home/master/things/module/hello_project/chardev.mod.o):

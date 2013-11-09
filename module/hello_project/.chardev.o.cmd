@@ -1,8 +1,8 @@
-cmd_/home/master/user/module/hello_project/chardev.o := gcc -Wp,-MD,/home/master/user/module/hello_project/.chardev.o.d  -nostdinc -isystem /usr/lib/gcc/i686-pc-linux-gnu/4.6.3/include -I/home/master/kernel/linux-3.10.12/arch/x86/include -Iarch/x86/include/generated  -Iinclude -I/home/master/kernel/linux-3.10.12/arch/x86/include/uapi -Iarch/x86/include/generated/uapi -I/home/master/kernel/linux-3.10.12/include/uapi -Iinclude/generated/uapi -include /home/master/kernel/linux-3.10.12/include/linux/kconfig.h -D__KERNEL__ -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -O2 -m32 -msoft-float -mregparm=3 -freg-struct-return -fno-pic -mpreferred-stack-boundary=2 -march=i686 -mtune=generic -Wa,-mtune=generic32 -ffreestanding -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -DCONFIG_AS_CFI_SECTIONS=1 -DCONFIG_AS_AVX=1 -DCONFIG_AS_AVX2=1 -pipe -Wno-sign-compare -fno-asynchronous-unwind-tables -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -Wframe-larger-than=2048 -fno-stack-protector -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -g -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -DCC_HAVE_ASM_GOTO  -DMODULE  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(chardev)"  -D"KBUILD_MODNAME=KBUILD_STR(chardev)" -c -o /home/master/user/module/hello_project/chardev.o /home/master/user/module/hello_project/chardev.c
+cmd_/home/master/things/module/hello_project/chardev.o := gcc -Wp,-MD,/home/master/things/module/hello_project/.chardev.o.d  -nostdinc -isystem /usr/lib/gcc/i686-pc-linux-gnu/4.6.3/include -I/home/master/kernel/linux-3.10.12/arch/x86/include -Iarch/x86/include/generated  -Iinclude -I/home/master/kernel/linux-3.10.12/arch/x86/include/uapi -Iarch/x86/include/generated/uapi -I/home/master/kernel/linux-3.10.12/include/uapi -Iinclude/generated/uapi -include /home/master/kernel/linux-3.10.12/include/linux/kconfig.h -D__KERNEL__ -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -O2 -m32 -msoft-float -mregparm=3 -freg-struct-return -fno-pic -mpreferred-stack-boundary=2 -march=i686 -mtune=generic -Wa,-mtune=generic32 -ffreestanding -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -DCONFIG_AS_CFI_SECTIONS=1 -DCONFIG_AS_AVX=1 -DCONFIG_AS_AVX2=1 -pipe -Wno-sign-compare -fno-asynchronous-unwind-tables -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -Wframe-larger-than=2048 -fno-stack-protector -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -g -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -DCC_HAVE_ASM_GOTO  -DMODULE  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(chardev)"  -D"KBUILD_MODNAME=KBUILD_STR(chardev)" -c -o /home/master/things/module/hello_project/chardev.o /home/master/things/module/hello_project/chardev.c
 
-source_/home/master/user/module/hello_project/chardev.o := /home/master/user/module/hello_project/chardev.c
+source_/home/master/things/module/hello_project/chardev.o := /home/master/things/module/hello_project/chardev.c
 
-deps_/home/master/user/module/hello_project/chardev.o := \
+deps_/home/master/things/module/hello_project/chardev.o := \
   include/linux/kernel.h \
     $(wildcard include/config/lbdaf.h) \
     $(wildcard include/config/preempt/voluntary.h) \
@@ -701,6 +701,6 @@ deps_/home/master/user/module/hello_project/chardev.o := \
   include/linux/llist.h \
     $(wildcard include/config/arch/have/nmi/safe/cmpxchg.h) \
 
-/home/master/user/module/hello_project/chardev.o: $(deps_/home/master/user/module/hello_project/chardev.o)
+/home/master/things/module/hello_project/chardev.o: $(deps_/home/master/things/module/hello_project/chardev.o)
 
-$(deps_/home/master/user/module/hello_project/chardev.o):
+$(deps_/home/master/things/module/hello_project/chardev.o):

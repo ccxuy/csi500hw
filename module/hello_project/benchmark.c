@@ -11,7 +11,7 @@ unsigned long getpf(int p);
 
 int *ptr;
 int i,a;
-int arraysize = 373999999;
+int arraysize = 323999999;
 struct timeval c_time;
 time_t c_sec;
 
@@ -20,7 +20,7 @@ int nread;
 int filedesc;
 static unsigned long pf_buf[2];
 
-static unsigned int old_maj=0, old_min=0;
+static unsigned long old_maj=0, old_min=0;
 
 unsigned long majpfaults, minpfaults;
 
@@ -63,8 +63,8 @@ int main(int argc, char *argv[])
     getpf(0);
     printf("  Page fault count:  maj=%lu min=%lu\n", pf_buf[0], pf_buf[1]);
     
-    printf("  Elapse : %lu\n", et-bt);
-    printf("  Page fault increase : maj=%lu, min=%lu\n", old_maj-pf_buf[0], old_min-pf_buf[1]);
+    printf("  Elapse : %lu s\n", et-bt);
+    printf("  Page fault increase : maj=%lu, min=%lu\n", pf_buf[0]-old_maj, pf_buf[1]-old_min);
 
     for(j=0; j<maxAttempts; j++)
     {
@@ -101,8 +101,8 @@ void reportTimeAndFaultCount(int j){
     getpf(0);
     printf("  Page fault count:  maj=%lu min=%lu\n", pf_buf[0], pf_buf[1]);
     
-    printf("  Elapse : %lu\n", et-bt);
-    printf("  Page fault increase : maj=%lu, min=%lu\n", old_maj-pf_buf[0], old_min-pf_buf[1]);
+    printf("  Elapse : %lu s\n", et-bt);
+    printf("  Page fault increase : maj=%lu, min=%lu\n", pf_buf[0]-old_maj, pf_buf[1]-old_min);
 
 }
 
