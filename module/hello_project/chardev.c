@@ -116,7 +116,7 @@ static int device_open(struct inode *inode, struct file *file)
 
 	printk(KERN_EMERG "<0>%lu %x %x %x %x .\n",pagefault[i], bytes[0], bytes[1], bytes[2], bytes[3]);
 	}
-	//printk(KERN_EMERG "maj=%d, min=%d\n",pagefault[0], pagefault[1]);
+	printk(KERN_EMERG "maj=%d, min=%d\n",pagefault[0], pagefault[1]);
 	//msg[16]='\0';
 	//printk(KERN_EMERG "<0>Print %d\n", (pagefault[1] >>  8) & 0xFF);
 	//printk(KERN_EMERG "<0>Print %d\n", (pagefault[1] ) & 0xFF);
