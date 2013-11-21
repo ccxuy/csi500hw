@@ -1,0 +1,45 @@
+Filesystem volume name:   <none>
+Last mounted on:          <not available>
+Filesystem UUID:          1bb8f0bc-774b-4889-bf7a-ce1cd1edc6fc
+Filesystem magic number:  0xEF53
+Filesystem revision #:    1 (dynamic)
+Filesystem features:      ext_attr resize_inode dir_index filetype sparse_super
+Filesystem flags:         signed_directory_hash 
+Default mount options:    user_xattr acl
+Filesystem state:         clean
+Errors behavior:          Continue
+Filesystem OS type:       Linux
+Inode count:              16
+Block count:              100
+Reserved block count:     5
+Free blocks:              79
+Free inodes:              5
+First block:              1
+Block size:               1024
+Fragment size:            1024
+Blocks per group:         8192
+Fragments per group:      8192
+Inodes per group:         16
+Inode blocks per group:   2
+Filesystem created:       Tue Nov 19 20:36:42 2013
+Last mount time:          n/a
+Last write time:          Tue Nov 19 20:36:42 2013
+Mount count:              0
+Maximum mount count:      -1
+Last checked:             Tue Nov 19 20:36:42 2013
+Check interval:           0 (<none>)
+Reserved blocks uid:      0 (user root)
+Reserved blocks gid:      0 (group root)
+First inode:              11
+Inode size:	          128
+Default directory hash:   half_md4
+Directory Hash Seed:      a9d48a93-5a69-4cb5-a067-c4a6eccb642e
+
+
+Group 0: (Blocks 1-99)
+  Primary superblock at 1, Group descriptors at 2-2
+  Block bitmap at 3 (+2), Inode bitmap at 4 (+3)
+  Inode table at 5-6 (+4)
+  79 free blocks, 5 free inodes, 2 directories
+  Free blocks: 21-99
+  Free inodes: 12-16
