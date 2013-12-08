@@ -1,6 +1,6 @@
 [user]
-    name = Andrew Yihang Xu @Mothra 
-    email = zlqxccxuy@gmail.com
+	name = Yihang XU @Mothra
+	email = yhxu1991@gmail.com
 
 [core]
     autocrlf = input
@@ -59,4 +59,4 @@
 [github]
         user = ninehills
 [push]
-        default = simple
+	default = simple
