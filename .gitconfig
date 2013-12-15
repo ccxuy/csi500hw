@@ -1,6 +1,11 @@
 [user]
+<<<<<<< HEAD
     name = Andrew Yihang Xu @Mothra 
     email = zlqxccxuy@gmail.com
+=======
+	name = Yihang XU @Mothra
+	email = yhxu1991@gmail.com
+>>>>>>> 86dd0916dd346ee6c78751c033e0c6ac21afe874
 
 [core]
     autocrlf = input
@@ -59,4 +64,8 @@
 [github]
         user = ninehills
 [push]
+<<<<<<< HEAD
         default = simple
+=======
+	default = simple
+>>>>>>> 86dd0916dd346ee6c78751c033e0c6ac21afe874
