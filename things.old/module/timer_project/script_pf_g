@@ -1,0 +1,65 @@
+Script started on Sat Nov  9 00:16:13 2013
+[01;32mmaster@localhost[01;34m ~/things/module/hello_project $[00m time
+
+real	0m0.000s
+user	0m0.000s
+sys	0m0.000s
+[01;32mmaster@localhost[01;34m ~/things/module/hello_project $[00m time/usr/bin/time cat df | od -t u4 [A[01;32mmaster@localhost[01;34m ~/things/module/hello_project $[00m time[K
+[K[A[01;32mmaster@localhost[01;34m ~/things/module/hello_project $[00m time/usr/bin/time cat df | od -t u4 [A[01;32mmaster@localhost[01;34m ~/things/module/hello_project $[00m logout[K
+[K[A[01;32mmaster@localhost[01;34m ~/things/module/hello_project $[00m logouts[Kogout/usr/bin/time cat df | od -t u4 [A[01;32mmaster@localhost[01;34m ~/things/module/hello_project $[00m time[K
+[K[A[01;32mmaster@localhost[01;34m ~/things/module/hello_project $[00m time[K /usr/bin/time ./benchmark
+========================
+ Benchmark Program
+ Author: Andrew Xu
+========================
+ Array size: 323999999
+ Maximum attempt: 5
+========================
+
+# 0 run : malloc >
+  Begin time > 1383974202
+  Page fault count:  maj=0 min=132
+  End time > 1383974215
+  Page fault count:  maj=6 min=316563
+  Elapse : 13 s
+  Page fault increase : maj=6, min=316431
+# 1 run >
+  Begin time > 1383974215
+  Page fault count:  maj=6 min=316563
+  End time > 1383974276
+  Page fault count:  maj=33961 min=566362
+  Elapse : 61 s
+  Page fault increase : maj=33955, min=249799
+# 2 run >
+  Begin time > 1383974276
+  Page fault count:  maj=33961 min=566362
+  End time > 1383974313
+  Page fault count:  maj=52107 min=714523
+  Elapse : 37 s
+  Page fault increase : maj=18146, min=148161
+# 3 run >
+  Begin time > 1383974313
+  Page fault count:  maj=52107 min=714523
+  End time > 1383974379
+  Page fault count:  maj=83053 min=944591
+  Elapse : 66 s
+  Page fault increase : maj=30946, min=230068
+# 4 run >
+  Begin time > 1383974379
+  Page fault count:  maj=83053 min=944592
+  End time > 1383974436
+  Page fault count:  maj=109202 min=1155266
+  Elapse : 57 s
+  Page fault increase : maj=26149, min=210674
+# 5 run >
+  Begin time > 1383974436
+  Page fault count:  maj=109202 min=1155267
+  End time > 1383974475
+  Page fault count:  maj=126495 min=1295725
+  Elapse : 39 s
+  Page fault increase : maj=17293, min=140458
+11.47user 26.16system 4:33.24elapsed 13%CPU (0avgtext+0avgdata 4034560maxresident)k
+8043144inputs+0outputs (126499major+1295737minor)pagefaults 0swaps
+[01;32mmaster@localhost[01;34m ~/things/module/hello_project $[00m [Kgit -     exit
+
+Script done on Sat Nov  9 00:22:13 2013

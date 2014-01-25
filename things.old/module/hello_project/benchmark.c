@@ -11,7 +11,7 @@ unsigned long getpf(int p);
 
 int *ptr;
 int i,a;
-int arraysize = 323999999;
+int arraysize = 350000000;
 struct timeval c_time;
 time_t c_sec;
 

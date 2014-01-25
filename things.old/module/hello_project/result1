@@ -1,0 +1,50 @@
+========================
+ Benchmark Program
+ Author: Andrew Xu
+========================
+ Array size: 350000000
+ Maximum attempt: 5
+========================
+
+# 0 run : malloc >
+  Begin time > 1384211519
+  Page fault count:  maj=0 min=212
+  End time > 1384211534
+  Page fault count:  maj=9 min=342030
+  Elapse : 15 s
+  Page fault increase : maj=9, min=341818
+# 1 run >
+  Begin time > 1384211534
+  Page fault count:  maj=9 min=342031
+  End time > 1384211599
+  Page fault count:  maj=36245 min=594258
+  Elapse : 65 s
+  Page fault increase : maj=36236, min=252227
+# 2 run >
+  Begin time > 1384211599
+  Page fault count:  maj=36245 min=594259
+  End time > 1384211655
+  Page fault count:  maj=66689 min=806720
+  Elapse : 56 s
+  Page fault increase : maj=30444, min=212461
+# 3 run >
+  Begin time > 1384211656
+  Page fault count:  maj=66689 min=806721
+  End time > 1384211727
+  Page fault count:  maj=100660 min=1065400
+  Elapse : 71 s
+  Page fault increase : maj=33971, min=258679
+# 4 run >
+  Begin time > 1384211727
+  Page fault count:  maj=100660 min=1065400
+  End time > 1384211798
+  Page fault count:  maj=133501 min=1301927
+  Elapse : 71 s
+  Page fault increase : maj=32841, min=236527
+# 5 run >
+  Begin time > 1384211798
+  Page fault count:  maj=133501 min=1301928
+  End time > 1384211889
+  Page fault count:  maj=173971 min=1582617
+  Elapse : 91 s
+  Page fault increase : maj=40470, min=280689
